@@ -5,13 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veil LIVE 2025 チケット販売</title>
     <style>
-        body { font-family: Arial, sans-serif; background: #f7f7f7; text-align: center; padding: 20px; }
-        .container { background: white; padding: 20px; max-width: 600px; margin: auto; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        h1 { color: #d4145a; }
-        .details { text-align: left; margin: 20px 0; }
-        .ticket { border: 1px solid #ddd; padding: 15px; margin: 10px 0; border-radius: 5px; background: #fafafa; }
-        .button { display: inline-block; background: #d4145a; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-size: 18px; margin-top: 20px; }
-        .back { display: block; margin-top: 20px; font-size: 14px; color: #333; }
+        body { 
+            font-family: Arial, sans-serif; 
+            background: #f7f7f7; 
+            text-align: center; 
+            padding: 20px; 
+        }
+        .container { 
+            background: white; 
+            padding: 20px; 
+            max-width: 600px; 
+            margin: auto; 
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        }
+        h1 { 
+            color: #d4145a; 
+        }
+        .details { 
+            text-align: left; 
+            margin: 20px 0; 
+        }
+        .ticket { 
+            border: 1px solid #ddd; 
+            padding: 15px; 
+            margin: 10px 0; 
+            border-radius: 5px; 
+            background: #fafafa; 
+        }
+        .button { 
+            display: inline-block; 
+            color: white; 
+            padding: 10px 20px; 
+            border-radius: 5px; 
+            text-decoration: none; 
+            font-size: 18px; 
+            margin-top: 10px; 
+        }
+        .button.disabled { 
+            background: #aaa; 
+            cursor: default; 
+            pointer-events: none; 
+        }
+        .back { 
+            display: block; 
+            margin-top: 20px; 
+            font-size: 14px; 
+            color: #333; 
+        }
     </style>
 </head>
 <body>
@@ -24,15 +65,15 @@
         </div>
         <div class="ticket">
             <p><strong>S席</strong> - ￥12,000</p>
-            <a href="#" class="button">購入する</a>
+            <a class="button disabled">完売しました</a>
         </div>
         <div class="ticket">
             <p><strong>A席</strong> - ￥9,000</p>
-            <a href="#" class="button">購入する</a>
+            <a class="button disabled">完売しました</a>
         </div>
         <div class="ticket">
             <p><strong>一般席</strong> - ￥6,000</p>
-            <a href="#" class="button">購入する</a>
+            <a class="button disabled">完売しました</a>
         </div>
         <a href="index.html" class="back">トップへ戻る</a>
     </div>
